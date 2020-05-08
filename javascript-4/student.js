@@ -26,7 +26,7 @@ let me = {
     firstName: "Bogos Ralph",
     superHeroName: "Third Eye",
     homeTown: "Chicago",
-    superPowers: ["Knows Everything", "Teleporting", "Invisibility"],
+    superPowers: ['Knows Everything', 'Teleporting', 'Invisibility'],
     superPowerXP: Math.floor(Math.random() * 100) + 1,
     profileImage: function(){
         return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
@@ -54,8 +54,8 @@ let setColor = (arr) => {
     for (let i = 0; i < arr.length; i++){
         if (arr[i] == 'blue'){
             arr[i] = '#4D4DFF'
-            return arr
         }
+        
     }
     background(arr[0], arr[1], arr[2])
 
@@ -76,7 +76,7 @@ let setPowers = (arr) => {
 // CODE HERE
 let redactInfo = (obj) =>{
     for (let key in obj){
-        obj.key = 'redacted'
+        obj[key] = 'redacted'
     }
     redacted()
 } 

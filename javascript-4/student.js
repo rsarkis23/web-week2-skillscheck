@@ -26,7 +26,7 @@ let me = {
     firstName: "Bogos Ralph",
     superHeroName: "Third Eye",
     homeTown: "Chicago",
-    superHeroName: ["Knows Everything", "Teleporting", "Invisibility"],
+    superPowers: ["Knows Everything", "Teleporting", "Invisibility"],
     superPowerXP: Math.floor(Math.random() * 100) + 1,
     profileImage: function(){
         return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
@@ -49,7 +49,7 @@ var homeTown = me.homeTown
 // CODE HERE
 let setColor = (arr) => {
     if (arr.length > 3){
-    arr.splice(0, (arr.length-3))
+    arr.splice(2, (arr.length-3))
     }
     for (let i = 0; i < arr.length; i++){
         if (arr[i] == 'blue'){

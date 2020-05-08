@@ -148,10 +148,10 @@ let total = myNumbers.reduce(function(acc, element){
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
-// let myNumbersIndex = []
-// myNumbersIndex.push(myNumbers.forEach(function(){
-// 	return myNumbers[]
-// }))
+ let myNumbersIndex = []
+ myNumbers.forEach((element, i) =>{
+	myNumbersIndex.push(i)
+ })
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
